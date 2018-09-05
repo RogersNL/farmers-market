@@ -1,8 +1,14 @@
 import React from 'react';
+import Schedule from './Schedule';
 import ProduceList from './ProduceList';
+
 function App(){
   return(
-    <div><ProduceList/></div>
+    <div>
+      <Schedule/>
+      <ProduceList/>
+    </div>
+
   );
 }
 

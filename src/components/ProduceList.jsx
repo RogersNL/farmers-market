@@ -1,4 +1,5 @@
 import React from 'react';
+import Produce from './Produce';
 
 const availableProduce = [
   {
@@ -270,7 +271,14 @@ const availableProduce = [
 ];
 function ProduceList(){
   return(
-    <div></div>
+    <div>
+      <hr/>
+      {availableProduce.map((producelist, index) =>
+        <Produce month={producelist.month}
+          selection={producelist.selection}
+          key={index}/>
+      )}
+    </div>
   );
 }
 
