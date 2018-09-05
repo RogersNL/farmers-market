@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function App(){
+function Header(){
   return(
     <div className="jumbotron">
       <style jsx>{`
@@ -17,9 +18,10 @@ function App(){
       `}</style>
       <h1>Avery's Organics</h1>
       <h2>Farmer's Market Schedule</h2>
+      <Link to="/">Home</Link> | <Link to="/schedule">Schedule</Link> | <Link to="/produce">Produce</Link>
     </div>
 
   );
 }
 
-export default App;
+export default Header;

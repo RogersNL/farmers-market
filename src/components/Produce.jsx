@@ -6,9 +6,9 @@ function Produce(props){
     <div className = "card">
       <h3 className = "card-title">{props.month}</h3>
       <div className = "card-body">
-      <ul>{props.selection.map((produce, index) =>
-        <li key={index}>{produce}</li>
-      )}</ul>
+        <ul>{props.selection.map((produce, index) =>
+          <li key={index}>{produce}</li>
+        )}</ul>
       </div>
       <style jsx>
         {`h3 {
